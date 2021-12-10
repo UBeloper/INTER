@@ -167,10 +167,9 @@ h1 {
     position: relative;
 }
 .overlay {
-    position: absolute;
-    top: 0;
+    
 }
 
-/* .honors img:hover .overlay {
-    opacity: 1;
-} */
+.honors img:hover .overlay {
+
+}
