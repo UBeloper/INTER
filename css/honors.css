@@ -14,9 +14,11 @@
 /* mainpage */
 
     /* 기본 설정 및 상단 네비*/
+    
 body {
-    background-color: black
-    z-index: 1;}
+    background-color: black;
+    z-index: 1;
+}
 
 .main {
     height: 100vh;
