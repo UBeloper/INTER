@@ -26,7 +26,7 @@
 
     /* 기본 설정 및 상단 네비*/
 body {
-    background-color: #ffffff;
+    background-color: black;
     z-index: 1;}
 
 .main {
@@ -54,10 +54,12 @@ i:hover {
     display: flex;
     justify-content: space-between;
     background-color:#001ea0;
+    border-bottom: 10px solid rgb(137, 149, 194);
 }
 
 .logos {
     position: relative;
+    cursor: pointer;
 }
 
 .logo {
@@ -136,12 +138,60 @@ i:hover {
     background-color: #001ea0;
 }
 
-/* 메인 영상 main video */
+/* 메인 - 사진 hover */
+.main_contents {
+    position: relative;
+}
 
-video {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%);
-    height: 86.5vh; /* 마진에 따라서 또 달라질 수도 있으니 고려*/
-    /* object-fit: cover;    */
+.main_img {
+    position: absolute;
+    width: auto;
+    height: 500px;
+    
+}
+
+.main_img:hover {
+    z-index: 55;
+    width: auto;
+    height: 70vh;
+}
+
+.main_img:hover .img_text{
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #d3c7ff, #a590ff, #7257ff, #1600ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 10px;
+}
+
+.img_text{
+    color: transparent;
+    transition: all 1.3s;
+    
+    
+}
+
+.main_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_img:nth-child(1) {
+    left: 0;
+    
+}
+
+.main_img:nth-child(2) {
+    left: 15%;
+    
+}
+
+.main_img:nth-child(3) {
+    right: 0;
+    
+}
+
+.main_img:nth-child(4) {
+    right: 18%
 }

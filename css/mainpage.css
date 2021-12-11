@@ -1,0 +1,234 @@
+:root {
+    --color-primary: #001ea0;
+    --color-secondary: #ffdc3c;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-gray: #eaeaea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* intro */
+#videointro {
+    position:fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* mainpage */
+
+    /* 기본 설정 및 상단 네비*/
+body {
+    background-color:black;
+    z-index: 1;}
+
+.main {
+    height: 100vh;
+    background: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    padding: 1.2rem;
+    margin-left: 0.2rem;
+    color: white;
+}
+
+i:hover {
+    background-color:#3f55b8;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color:#001ea0;
+    border-bottom: 10px solid rgb(137, 149, 194);
+}
+
+.logos {
+    position: relative;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    width: 4rem;
+    top: 30px;
+    left: 30px;
+}
+
+.textlogo {
+    position :absolute;
+    width: 10rem;
+    top: 30px;
+    left: 110px;
+}
+
+.nav_right {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 2rem;
+    
+}
+
+.nav_right a{
+    padding: 1rem;  
+}
+
+.nav_right a:hover{
+    background-color:#3f55b8;
+    border-radius: 10px;
+}
+
+/* 메뉴 드랍다운 */
+
+/* ABOUT*/
+.drop-content-about {
+    background: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    padding-right: 14rem;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.drop-content-about a{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.drop-content-about a:hover {
+    background-color: #001ea0;
+}
+
+
+/* NEWS */
+
+.drop-content-news {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    padding-right: 6rem;
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.drop-content-news a{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.drop-content-news a:hover {
+    background-color: #001ea0;
+}
+
+/* 메인 영상 main video */
+
+/* video {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    height: 86.5vh; 마진에 따라서 또 달라질 수도 있으니 고려
+    */
+
+
+/* 메인 - 사진 hover */
+.main_contents {
+    position: relative;
+}
+
+.main_img {
+    position: absolute;
+    width: auto;
+    height: 500px;
+    
+}
+
+.main_img:hover {
+    z-index: 55;
+    width: auto;
+    height: 70vh;
+}
+
+.main_img:hover .img_text{
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #d3c7ff, #a590ff, #7257ff, #1600ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-top: 10px;
+}
+
+.img_text{
+    color: transparent;
+    transition: all 1.3s;
+    
+    
+}
+
+.main_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_img:nth-child(1) {
+    left: 0;
+    
+}
+
+.main_img:nth-child(2) {
+    left: 15%;
+    
+}
+
+.main_img:nth-child(3) {
+    right: 0;
+    
+}
+
+.main_img:nth-child(4) {
+    right: 18%
+}
+
+
+/* 파트너스 */
+.partners {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.partners_logo {
+    margin : 20px;
+    height: 60px;
+}
+.partners_logo img {
+    position: relative;
+    margin: 0 30px;
+    width: 70px;
+}
+
+.partners_logo img:hover {    
+    width: 80px;
+}
