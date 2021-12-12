@@ -47,7 +47,7 @@
         </div>
 
         <!-- 2021-22 순위테이블 -->
-        <h1 class="table2122"> TABLE 2021/22 </h1>
+        <h2 class="table2122"> TABLE 2021/22 </h2>
         <div class="table-container">
         <table>
             <tr>
@@ -62,7 +62,7 @@
             </tr>
             <tr>
                 <td class="chamsticket">1</td>
-                <td><img src="img/MILAN.png">Milan</td>
+                <td><img src="img/MILAN.png"><span>Milan</span></td>
                 <td>39</td>
                 <td>12</td>
                 <td>3</td>
@@ -70,9 +70,9 @@
                 <td>17</td>
                 <td>LLWWD</td>
             </tr>
-            <tr>
-                <td class="chamsticket">2</td>
-                <td><img src="img/internazionale.png">Internazionale</td>
+            <tr id ="interpos">
+                <td class="chamsticket" id="interpos">2</td>
+                <td><img src="img/internazionale.png"><span>Internazionale</span></td>
                 <td>37</td>
                 <td>11</td>
                 <td>4</td>
@@ -82,7 +82,7 @@
             </tr>
             <tr>
                 <td class="chamsticket">3</td>
-                <td><img src="img/napoli.png">Napoli</td>
+                <td><img src="img/napoli.png"><span>Napoli</span></td>
                 <td>36</td>
                 <td>11</td>
                 <td>3</td>
@@ -92,7 +92,7 @@
             </tr>
             <tr>
                 <td class="chamsticket">4</td>
-                <td><img src="img/atalanta.png">Atalanta</td>
+                <td><img src="img/atalanta.png"><span>Atalanta</span></td>
                 <td>34</td>
                 <td>10</td>
                 <td>4</td>
@@ -102,7 +102,7 @@
             </tr>
             <tr>
                 <td class="euroticket">5</td>
-                <td><img src="img/fiorentina.png">fiorentina</td>
+                <td><img src="img/fiorentina.png"><span>Fiorentina</span></td>
                 <td>30</td>
                 <td>10</td>
                 <td>0</td>
@@ -112,7 +112,7 @@
             </tr>
             <tr>
                 <td class="euroticket">6</td>
-                <td><img src="img/roma.png">Juventus</td>
+                <td><img src="img/juventus.png"><span>Juventus</span></td>
                 <td>28</td>
                 <td>8</td>
                 <td>4</td>
@@ -122,6 +122,24 @@
             </tr>
         </table>
     </div>
+
+    <!-- 경기 일정 및 영상 -->
+    <div class="nextmatch">
+        <div class="match-container">
+            <h2>12 DECEMBER 2021 20:45</h2>
+            <div class="comingup">
+                <div><img src="img/internazionale.png"><span>INTER</span></div>
+                <div><img src="img/cagliari.png"><span>CAGLIARI</span></div>
+            </div>
+            <button class="tickets"><a href="https://www.inter.it/en/biglietteria">TICKETS</a></button>
+        </div>
+    </div>
+
+    <!-- 영상 -->
+    <div class="videobox">
+        <video class="minivideo" autoplay muted loop onclick="location.href='https:/\/www.youtube.com/c/InterOfficial'"> 
+            <source src="img/angle.mp4" type="video/mp4"></video>
+                </div>
 
         <!-- 파트너스 -->
         <div class="partners">

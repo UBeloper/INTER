@@ -138,11 +138,127 @@ i:hover {
 /* 순위테이블 */
 .table2122 {
     color: white;
+    padding: 1rem;
+    margin-left : 1rem;
 }
 
 .table-container {
     color: white;
+    padding: 1rem 3rem;
+    float: left;
 } 
+
+td {
+    margin-top: 0.5rem;   
+}
+tr td{
+    text-align: center;
+}
+
+tr td span {
+    padding : 0 1rem;
+    font-size: 1.2rem;
+}
+
+tr td:nth-child(1) {
+    width : 2rem;
+    font-size: 1.2rem;
+}
+
+tr td:nth-child(2) {
+    width: 18rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+tr td:nth-child(3),
+tr td:nth-child(4),
+tr td:nth-child(5),
+tr td:nth-child(6),
+tr td:nth-child(7){
+    width: 2rem;
+}
+
+tr td:nth-child(8) {
+    width: 8rem;
+    text-align: center;
+}
+
+.chamsticket {
+    border-left: 1px solid green;
+}
+
+.euroticket {
+    border-left: orange 1px solid;
+}
+
+#interpos td, #interpos span{
+    color: var(--color-secondary);
+}
+
+/* 경기 일정 및 영상 */
+.nextmatch {
+    color: white;
+    float: left;
+    width: 50%;
+}
+
+.match-container {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comingup {
+    padding: 1rem;
+    width: 70%;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comingup div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.comingup div span {
+    padding : 0 1rem;
+}
+
+.match-container button {
+    padding : 0.5rem;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+}
+
+.match-container button:hover {
+    background-color: rgb(109, 109, 238);
+}
+
+/* 영상 */
+.videobox {
+    margin-top: 1rem;
+    margin-left: 9rem;
+    height: 30vh;
+    width: 50vh;
+    float: left;
+}
+.minivideo {
+    position: absolute;
+    width: 30rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.minivideo:hover {
+    border: white 2px solid;
+}
+
 
 
 /* 파트너스 */
