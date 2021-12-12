@@ -183,52 +183,50 @@
     
     
     /* 사진영역*/
-    .slideshow-container {
-        margin-top: 5rem;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .mySlides {
-        transition: all 1.5s;
-        padding: 0 0.3rem;
-    }
-    
-    .mySlides img {
-        height: 60vh;
-    }
-    
-    .mySlides img:hover {
-        cursor: pointer;
-    }
-    
-    /* 파트너스 */
-    .partners {
-        color: white;
-        text-align: center;
-        font-size: 1.2rem;
-        font-weight: bold;
-        position: absolute;
-        bottom: 0%;
-        left: 50%;
-        transform: translate(-50%);
-        border-top: 2px solid rgb(137, 149, 194);
-    }
-    
-    .partners_logo {
-        margin : 20px;
-        height: 60px;
-    }
-    
-    .partners_logo img {
-        position: relative;
-        margin: 0 30px;
-        width: 4rem;
-    }
-    
-    .partners_logo img:hover {   
-        width: 4.2rem;
-    }
+.slideshow-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mySlides {
+    transition: all 1.5s;
+    padding: 0 0.3rem;
+}
+
+.mySlides img {
+    height: 58vh;
+}
+
+.mySlides img:hover {
+    cursor: pointer;
+}
+
+/* 파트너스 */
+.partners {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 2px solid rgb(137, 149, 194);
+}
+
+.partners_logo {
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+}
+
+.partners_logo img {
+    margin: 0 1.5rem;
+    width: 4rem;
+    cursor: pointer;
+}
+
+.partners_logo img:hover {   
+    width: 4.2rem;
+}
     
     
     

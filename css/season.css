@@ -148,25 +148,23 @@ i:hover {
 /* 파트너스 */
 .partners {
     color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
     position: absolute;
-    bottom: 0%;
+    bottom: 0;
     left: 50%;
     transform: translate(-50%);
     border-top: 2px solid rgb(137, 149, 194);
 }
 
 .partners_logo {
-    margin : 20px;
-    height: 60px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
 }
 
 .partners_logo img {
-    position: relative;
-    margin: 0 30px;
+    margin: 0 1.5rem;
     width: 4rem;
+    cursor: pointer;
 }
 
 .partners_logo img:hover {   
