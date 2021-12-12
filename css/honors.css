@@ -11,10 +11,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
 /* mainpage */
 
     /* 기본 설정 및 상단 네비*/
-    
 body {
     background-color: black;
     z-index: 1;
@@ -25,7 +27,7 @@ body {
     background: black;
 }
 
-a {
+a, span {
     color: white;
     text-decoration: none;
 }
@@ -46,10 +48,13 @@ i:hover {
     display: flex;
     justify-content: space-between;
     background-color:#001ea0;
+    overflow: hidden;
+    /* border-bottom: 3px solid rgb(137, 149, 194); */
 }
 
 .logos {
     position: relative;
+    cursor: pointer;
 }
 
 .logo {
@@ -82,13 +87,14 @@ i:hover {
     border-radius: 10px;
 }
 
+
 /* 메뉴 드랍다운 */
 
 /* ABOUT*/
 .drop-content-about {
     background: rgba(255, 255, 255, 0.1);
     text-align: right;
-    padding-right: 14rem;
+    padding-right: 8.2rem;
     font-weight: bold;
     display: none;
     position: absolute;
@@ -96,12 +102,13 @@ i:hover {
     z-index: 2;
 }
 
-.drop-content-about a{
+.drop-content-about a, .drop-content-about span{
     display: inline-block;
-    padding: 1rem;
+    padding: 1.2rem;
+    cursor: pointer;
 }
 
-.drop-content-about a:hover {
+.drop-content-about a:hover, .drop-content-about span:hover {
     background-color: #001ea0;
 }
 
@@ -111,7 +118,7 @@ i:hover {
 .drop-content-news {
     background-color: rgba(255, 255, 255, 0.1);
     text-align: right;
-    padding-right: 6rem;
+    padding-right: 0;
     font-weight: bold;
     display: none;
     position: absolute;
@@ -119,12 +126,13 @@ i:hover {
     z-index: 2;
 }
 
-.drop-content-news a{
+.drop-content-news a, .drop-content-news span{
     display: inline-block;
-    padding: 1rem;
+    padding: 1.2rem;
+    cursor: pointer;
 }
 
-.drop-content-news a:hover {
+.drop-content-news a:hover, .drop-content-news span:hover {
     background-color: #001ea0;
 }
 
@@ -175,4 +183,133 @@ h1 {
 
 .honors img:hover .overlay {
 
+}
+
+
+
+/* 파트너스 */
+.partners {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 2px solid rgb(137, 149, 194);
+}
+
+.partners_logo {
+    margin : 20px;
+    height: 60px;
+}
+
+.partners_logo img {
+    position: relative;
+    margin: 0 30px;
+    width: 4rem;
+}
+
+.partners_logo img:hover {   
+    width: 4.2rem;
+}
+
+
+
+/* 로그인 폼 + modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5rem;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container div {
+    padding: 0.7rem;
+    
+}
+
+.login-logo {
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 1rem;
+    border: none;
+    border-bottom: 0.1px white solid;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.login-form input:hover {
+    border: 1px solid white;
+}
+
+.login-signup {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginbtn, .login-signup button {
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem;
+    border: none;
+    background-color: var(--color-primary);
+}
+
+.loginbtn:hover, .login-signup button:hover {
+    background-color: royalblue;
+}
+
+.login-container span {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    
+}
+
+.login-container span:hover {
+    text-decoration: underline;
+}
+
+.later-close {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.later-close button {
+    color: white;
+    font-weight: bold;
+    padding: 0.7rem;
+    border: none;
+    background-color: red;
+}
+
+.later-close button:hover {
+    background-color: rgb(230, 87, 87);
 }
