@@ -24,7 +24,10 @@ body {
 
 .main {
     height: 100vh;
-    background: black;
+    /* background-image:url('/img/sansiro.jpg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 a, span {
@@ -91,7 +94,7 @@ i:hover {
 
 /* ABOUT*/
 .drop-content-about {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     text-align: right;
     padding-right: 8.2rem;
     font-weight: bold;
@@ -115,7 +118,7 @@ i:hover {
 /* NEWS */
 
 .drop-content-news {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: right;
     padding-right: 0;
     font-weight: bold;
@@ -135,51 +138,44 @@ i:hover {
     background-color: #001ea0;
 }
 
-/* 사진 슬라이드 */
 
-.dots {
-    width: 15%;
-    height: 4rem;
-    float: left; /*블럭영역때문에 띄우려고*/
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
+/* 백그라운드 영상으로 */
+.videoback {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.dots .dot {
-    color: rgba(255, 255, 255, 0.753);
-    text-align: center;
-    flex: 20%;
-    margin: 0 1rem;
-    padding: 0 0.3rem;
-    font-weight: bold;
-    font-size: 1.2rem;
+/* 설명충 */
+.stadium-content {
+    position: absolute;
+    padding: 1rem;
+    bottom: 2rem;
+    right:2rem;
+    text-align: right;
+    border-radius: 1rem;
+    background-color: rgba(14, 14, 241, 0.4);
+    color:white;
+    opacity: 0;
+    transition-delay: 1.5s;
+    transition-duration: 4s;
+    
 }
 
-.active {
-    background-color: #001ea0;
-}
-
-
-/* 사진영역*/
-.slideshow-container {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.mySlides {
-    transition: all 1.5s;
-    padding: 0 0.3rem;
-}
-
-.mySlides img {
-    height: 60vh;
-}
-
-.mySlides img:hover {
+.stadium-content button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
     cursor: pointer;
 }
+
+.stadium-content button:hover {
+    background-color: royalblue;
+}
+
 
 /* 파트너스 */
 .partners {

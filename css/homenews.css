@@ -137,9 +137,11 @@ i:hover {
 
 /* 뉴스그리드 */
 .newshead {
+    padding-top: 1.5rem;
     color: white;
     text-align: center;
     margin: 0.5rem;
+    text-decoration: underline;
 }
 
 .news {
@@ -301,3 +303,5 @@ i:hover {
 .later-close button:hover {
     background-color: rgb(230, 87, 87);
 }
+
+

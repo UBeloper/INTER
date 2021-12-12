@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FC Internazionale</title>
+    <title>Stadium</title>
     <link rel="stylesheet" href="css/stadium.css">
     <link rel="icon" type="image/x-icon" href="img/interlogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,47 +46,19 @@
             <span onclick="closer()">[ X ]</span>
         </div>
 
+        <!-- 일단 백그라운드 바꾸기 -->
+        <video autoplay loop muted class="videoback" onmouseover="getcontent()">
+            <source src="img/sansiro.mp4">
+        </video>
 
-        <!-- 사진슬라이드 -->
-        <div class="dots">
-            <span class="dot">I</span>
-            <span class="dot">N</span>
-            <span class="dot">T</span>
-            <span class="dot">E</span>
-            <span class="dot">R</span>
-        </div>
-
-        <div class="slideshow-container">
-            <div class="mySlides" onmouseover="mover()" id="sl1">
-                <img src="img/1.jpg">
-            </div>
-
-            <div class="mySlides" onmouseover="mover2()" id="sl2">
-                <img src="img/2.jpg">
-            </div>
-
-            <div class="mySlides" onmouseover="mover3()" id="sl3">
-                <img src="img/3.jpg">
-            </div>
-
-            <div class="mySlides" onmouseover="mover4()" id="sl4">
-                <img src="img/4.jpg">
-            </div>
-
-            <div class="mySlides" onmouseover="mover5()" id="sl5">
-                <img src="img/5.jpg">
-            </div>
-        </div>
-
-        <!-- 파트너스 -->
-        <div class="partners">
-            <div class="partners_logo">
-                <a href="#"><img src="img/nike2.png"></a>
-                <a href="#"><img src="img/socios.png"></a>
-                <a href="#"><img src="img/pirelli.png"></a>
-                <a href="#"><img src="img/lenovo.png"></a>
-            </div>
-        </div>
+    
+        <!-- 설명충시작 -->
+        <div class="stadium-content">
+            <h1>Stadio Giuseppe Meazza - Milano, Italy</h1>
+            <h2>The Home of Internazionale</h2>
+            <h3>Including about 80,000 Covered</h3>
+            <button><a href="https://www.inter.it/en/stadio/the-stadium" target="_blank">MORE !!</a></button>
+        </div>        
 
         <!-- 로그인 창 -->
         <div class="modal">
