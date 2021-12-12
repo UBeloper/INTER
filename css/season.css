@@ -135,51 +135,15 @@ i:hover {
     background-color: #001ea0;
 }
 
-/* 사진 슬라이드 */
-
-.dots {
-    width: 15%;
-    height: 4rem;
-    float: left; /*블럭영역때문에 띄우려고*/
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
+/* 순위테이블 */
+.table2122 {
+    color: white;
 }
 
-.dots .dot {
-    color: rgba(255, 255, 255, 0.753);
-    text-align: center;
-    flex: 20%;
-    margin: 0 1rem;
-    padding: 0 0.3rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
+.table-container {
+    color: white;
+} 
 
-.active {
-    background-color: #001ea0;
-}
-
-
-/* 사진영역*/
-.slideshow-container {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-.mySlides {
-    transition: all 1.5s;
-    padding: 0 0.3rem;
-}
-
-.mySlides img {
-    height: 60vh;
-}
-
-.mySlides img:hover {
-    cursor: pointer;
-}
 
 /* 파트너스 */
 .partners {

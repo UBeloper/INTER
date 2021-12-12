@@ -46,27 +46,156 @@
         </div>
 
         <!-- 메인 화면 : HONORS 내용 -->
-        <h1> Winning Records </h1>
+        <h1 class="winrec" onmouseover="honorsOpen()"> Winning Records </h1>
         <div class="honors">
             <div class="seriea honor">
                 <h2 class="h2pad">Serie A</h2>
-                <img src="img/serieA.png">
-                <!-- <div class="overlay">
-                </div> -->
+                <img src="img/seriea.png" onclick="openserieA()">
             </div>
             <div class="copaitalia honor">
                 <h2 class="h2pad">Copa Italia</h2>
-                <img src="img/copaitalia.png">
+                <img src="img/copaitalia.png" onclick="opencopa()">
             </div>
             <div class="cl honor">
-                <h2 class="h2pad">Uefa Champions League</h2>
-                <img src="img/CL.png">
+                <h2 class="h2pad">UEFA Champions League</h2>
+                <img src="img/CL.png" onclick="opencham()">
             </div>
             <div class="euro honor">
-                <h2 class="h2pad">Uefa Ueropa League</h2>
-                <img src="img/EURO.png">
+                <h2 class="h2pad">UEFA Europa League</h2>
+                <img src="img/EURO.png" onclick="openeuro()">
             </div>
         </div>
+
+        <!-- 각 리그/컵 내용 overlay -->
+        
+        <!-- 1.seriea -->
+        <div class="seriea-overlay"><!-- 화면꽉채우고 -->
+            <div class="seriea-container">
+                <div class="ol-closebtn" onclick="olclose()">X</div>
+                <div class="seriea-teams">
+                    <div>Juventus FC</div>
+                    <div class="INT">Internazionale</div>
+                    <div>A.C Milan</div>
+                    <div>Genoa</div>
+                    <div>Vercelli</div>
+                </div>
+                <div class="seriea-trophies">
+                    <div class="seriea-times">
+                        <div class="chargingbar bar1">36</div>
+                    </div>
+                    <div class="seriea-times">
+                        <div class="chargingbar bar2">19</div>
+                    </div>
+                    <div class="seriea-times">
+                        <div class="chargingbar bar3">18</div>
+                    </div>
+                    <div class="seriea-times">
+                        <div class="chargingbar bar4">9</div>
+                    </div>
+                    <div class="seriea-times">
+                        <div class="chargingbar bar5">7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 코파이탈리아 -->
+
+        <div class="copa-overlay">
+            <div class="copa-container">
+                <div class="ol-closebtn" onclick="document.querySelector('.copa-overlay').style.display='none'">X</div>
+                <div class="copa-teams">
+                    <div>Juventus FC</div>
+                    <div>AS Roma</div>
+                    <div class="INT">Internazionale</div>
+                    <div>Lazio</div>
+                    <div>Fiorentina</div>
+                </div>
+                <div class="copa-trophies">
+                    <div class="copa-times">
+                        <div class="chargingbar bar1">14</div>
+                    </div>
+                    <div class="copa-times">
+                        <div class="chargingbar bar2">9</div>
+                    </div>
+                    <div class="copa-times">
+                        <div class="chargingbar bar3">7</div>
+                    </div>
+                    <div class="copa-times">
+                        <div class="chargingbar bar4">7</div>
+                    </div>
+                    <div class="copa-times">
+                        <div class="chargingbar bar5">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UEFA 챔피언스리그 -->
+
+        <div class="cham-overlay">
+            <div class="cham-container">
+                <div class="ol-closebtn" onclick="document.querySelector('.cham-overlay').style.display='none'">X</div>
+                <div class="cham-teams">
+                    <div>Real Madrid</div>
+                    <div>AC Milan</div>
+                    <div>Bayern, LIV</div>
+                    <div>FC Barcelona</div>
+                    <div class="INT">FC Inter, Man U</div>
+                </div>
+                <div class="cham-trophies">
+                    <div class="cham-times">
+                        <div class="chargingbar bar1">13</div>
+                    </div>
+                    <div class="cham-times">
+                        <div class="chargingbar bar2">7</div>
+                    </div>
+                    <div class="cham-times">
+                        <div class="chargingbar bar3">6</div>
+                    </div>
+                    <div class="cham-times">
+                        <div class="chargingbar bar4">5</div>
+                    </div>
+                    <div class="cham-times">
+                        <div class="chargingbar bar5">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UEFA 유로파리그 -->
+
+        <div class="euro-overlay">
+            <div class="euro-container">
+                <div class="ol-closebtn" onclick="document.querySelector('.euro-overlay').style.display='none'">X</div>
+                <div class="euro-teams">
+                    <div>Sevilla FC</div>
+                    <div class="INT">Internazionale</div>
+                    <div>Liverpool FC</div>
+                    <div>Juventus FC</div>
+                    <div>AT Madrid</div>
+                </div>
+                <div class="euro-trophies">
+                    <div class="euro-times">
+                        <div class="chargingbar bar1">6</div>
+                    </div>
+                    <div class="euro-times">
+                        <div class="chargingbar bar2">3</div>
+                    </div>
+                    <div class="euro-times">
+                        <div class="chargingbar bar3">3</div>
+                    </div>
+                    <div class="euro-times">
+                        <div class="chargingbar bar4">3</div>
+                    </div>
+                    <div class="euro-times">
+                        <div class="chargingbar bar5">3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 <!-- 파트너스 -->
 <div class="partners">
     <div class="partners_logo">
