@@ -135,51 +135,48 @@ i:hover {
     background-color: #001ea0;
 }
 
-/* 사진 슬라이드 */
-
-.dots {
-    width: 15%;
-    height: 4rem;
-    float: left; /*블럭영역때문에 띄우려고*/
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-}
-
-.dots .dot {
-    color: rgba(255, 255, 255, 0.753);
+/* 뉴스그리드 */
+.newshead {
+    color: white;
     text-align: center;
-    flex: 20%;
-    margin: 0 1rem;
-    padding: 0 0.3rem;
-    font-weight: bold;
-    font-size: 1.2rem;
+    margin: 0.5rem;
 }
 
-.active {
-    background-color: #001ea0;
+.news {
+    margin-top: 3rem;
 }
 
-
-/* 사진영역*/
-.slideshow-container {
-    margin-top: 5rem;
+.news-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.news1, .news2, .news3, .news4, .news5, .news6 {
+    flex:33%;
+    display: flex;
+    padding: 0.7rem;
 }
 
-.mySlides {
-    transition: all 1.5s;
-    padding: 0 0.3rem;
+.news-p {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
 }
 
-.mySlides img {
-    height: 60vh;
+.news-p a{
+    text-decoration: underline;
 }
-
-.mySlides img:hover {
+.newsimg-cont {
     cursor: pointer;
 }
+
+.newsimg-cont img:hover {
+    border: 0.2px white solid;
+}
+
 
 /* 파트너스 */
 .partners {

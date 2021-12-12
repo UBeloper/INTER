@@ -14,7 +14,7 @@
 
 <body>
     <!-- HOME -->
-    <div class="main">
+    < class="main">
         <!-- 상단 메뉴 -->
         <div class="navbar">
             <div class="logos" onclick="location.href='mainpage.html'">
@@ -26,7 +26,8 @@
                 <a href="#" id="news" onclick="dropnews()">NEWS</a>
                 <a href="honors.html" id="honors">HONORS</a>
                 <a href="stadium.html" id="stadium">STADIUM</a>
-                <i class="fa fa-user-circle-o" onclick="document.querySelector('.modal').style.display='block'"></i> <!-- 로그인 폼 -->
+                <i class="fa fa-user-circle-o" onclick="document.querySelector('.modal').style.display='block'"></i>
+                <!-- 로그인 폼 -->
             </div>
         </div>
         <!-- 메뉴 드랍다운 -->
@@ -47,36 +48,74 @@
         </div>
 
 
-        <!-- 사진슬라이드 -->
-        <div class="dots">
-            <span class="dot">I</span>
-            <span class="dot">N</span>
-            <span class="dot">T</span>
-            <span class="dot">E</span>
-            <span class="dot">R</span>
+        <!-- 뉴스그리드 -->
+        <div class="newshead">
+            <h1>NEWS</h1>
         </div>
 
-        <div class="slideshow-container">
-            <div class="mySlides" onmouseover="mover()" id="sl1">
-                <img src="img/1.jpg">
-            </div>
+        <div class="news">
+        <div class="news-container">
+                    <div class="news1">
+                        <div class="newsimg-cont"><img src="img/news1.jpg"></div>
+                        <div class="news-p">
+                            <span>11/12/2021</span><br>
+                            <h3>Inter vs Cagliari stat pack</h3><br>
+                            <span><a href="https://www.inter.it/en" target="_blank">READ</a></span>
+                        </div>
+                    </div>
 
-            <div class="mySlides" onmouseover="mover2()" id="sl2">
-                <img src="img/2.jpg">
-            </div>
+                    <div class="news2">
+                        <div class="newsimg-cont"><img src="img/news2.jpg"></div>
+                        <div class="news-p">
+                            <span>10/12/2021</span><br>
+                            <h3>Snow and smiles as Inter train ahead of Cagliari</h3><br>
+                            <span><a href="https://www.inter.it/en" target="_blank">READ</a></span>
+                        </div>
+                    </div>
 
-            <div class="mySlides" onmouseover="mover3()" id="sl3">
-                <img src="img/3.jpg">
-            </div>
+                    <div class="news3">
+                        <div class="newsimg-cont"><img src="img/news3.jpg"></div>
+                        <div class="news-p">
+                            <span>10/12/2021</span><br>
+                            <h3>Barella: “Shame we lost in Madrid. We'll move on as a group"</h3><br>
+                            <span><a href="https://www.inter.it/en" target="_blank">READ</a></span>
+                        </div>
+                    </div>
 
-            <div class="mySlides" onmouseover="mover4()" id="sl4">
-                <img src="img/4.jpg">
-            </div>
+                    <div class="news4">
+                        <div class="newsimg-cont"><img src="img/news4.jpg"></div>
+                        <div class="news-p">
+                            <span>10/12/2021</span><br>
+                            <h3>DIGITALBITS GOAL OF THE MONTH | Dzeko named as October winner</h3><br>
+                            <span><a href="https://www.inter.it/en" target="_blank">READ</a></span>
+                        </div>
+                    </div>
 
-            <div class="mySlides" onmouseover="mover5()" id="sl5">
-                <img src="img/5.jpg">
-            </div>
-        </div>
+                    <div class="news5">
+                        <div class="newsimg-cont"><img src="img/news5.jpg"></div>
+                        <div class="news-p">
+                            <span>10/12/2021</span><br>
+                            <h3>Behind the scene in Madrid</h3><br>
+                            <span><a href="https://www.inter.it/en" target="_blank">READ</a></span>
+                        </div>
+                    </div>
+                
+                    <div class="news6">
+                        <div class="newsimg-cont"><img src="img/news8.jpg"></div>
+                        <div class="news-p">
+                            <span>09/12/2021</span><br>
+                            <h3>Inter’s possible last-16 opponents in the Champions League</h3><br>
+                            <span><a href="https://www.inter.it/en" target="_blank">READ</a></span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                </div>
+                
+                
+
 
         <!-- 파트너스 -->
         <div class="partners">
@@ -99,18 +138,19 @@
                 <div class="login-signup">
                     <button class="loginbtn"><a href="#">LOGIN</a></button>
                     <button><a href="#">SIGN UP</a></button>
-                            </div> 
+                </div>
                 <span><a href="#">FORGOT YOUR PASSWORD?</a></span>
                 <div class="later-close">
-                    <button onclick="document.querySelector('.modal').style.display='none'"><a href="#">LATER</a></button>
+                    <button onclick="document.querySelector('.modal').style.display='none'"><a
+                            href="#">LATER</a></button>
                 </div>
             </div>
         </div>
 
-    </div>
+        </div>
 
-    <!-- 자바스크립트 -->
-    <script src="js/homenews.js"></script>
+        <!-- 자바스크립트 -->
+        <script src="js/homenews.js"></script>
 
 </body>
 
