@@ -26,3 +26,6 @@
 -                           active와 display none block을 이용하려 했으나 시간 부족...
 - HONORS : 완료.
 - STADIUM : 완료.. 
+
+
+ 4. 해보고 싶었는데 못한 것 : 밀어내는 메뉴 / += 활용한 JS / GRID / 미디어쿼리
