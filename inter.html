@@ -17,7 +17,10 @@
     <video autoplay muted loop id="videointro" onclick="linkmain()">
         <source src="img/interintro.mp4" type="video/mp4">
     </video>
+    <!-- 메인화면으로 이동-->
+    <img src="img/interlogo.png" id="gomain" onclick="linkmain()">
     
+
     <!-- HOME -->
     <div class="main">
         <!-- 상단 메뉴 -->
@@ -31,7 +34,7 @@
                 <a href="#" id="news" onclick="dropnews()">NEWS</a>
                 <a href="honors.html" id="honors">HONORS</a>
                 <a href="stadium.html" id="stadium">STADIUM</a>
-                <i class="fa fa-user-circle-o"></i> <!-- 로그인 폼 -->
+                <i class="fa fa-user-circle-o" onclick="document.querySelector('.modal').style.display='block'"></i> <!-- 로그인 폼 -->
             </div>
         </div>
         <!-- 메뉴 드랍다운 -->
@@ -40,6 +43,7 @@
             <a href="season.html">SEASON</a>
             <a href="#">FIRST TEAM</a>
             <a href="#">COACH</a>
+            <span onclick="closer()">[ X ]</span>
         </div>
 
         <!-- NEWS -->
@@ -47,50 +51,74 @@
             <a href="homenews.html">HOME NEWS</a>
             <a href="#">PRESS ROOM</a>
             <a href="#">LETTERS TO INTER</a>
+            <span onclick="closer()">[ X ]</span>
         </div>
 
 
-    <!-- 사진슬라이드 -->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="img/zanetti.jpg">
-            <div class="text">Caption Text</div>
+        <!-- 사진슬라이드 -->
+        <div class="dots">
+            <span class="dot">I</span>
+            <span class="dot">N</span>
+            <span class="dot">T</span>
+            <span class="dot">E</span>
+            <span class="dot">R</span>
         </div>
-    
-        <div class="mySlides fade">
-            <img src="img/D5LhmWaXoAAJIN5.jpg">
-            <div class="text">Caption Two</div>
+
+        <div class="slideshow-container">
+            <div class="mySlides" onmouseover="mover()" id="sl1">
+                <img src="img/1.jpg">
+            </div>
+
+            <div class="mySlides" onmouseover="mover2()" id="sl2">
+                <img src="img/2.jpg">
+            </div>
+
+            <div class="mySlides" onmouseover="mover3()" id="sl3">
+                <img src="img/3.jpg">
+            </div>
+
+            <div class="mySlides" onmouseover="mover4()" id="sl4">
+                <img src="img/4.jpg">
+            </div>
+
+            <div class="mySlides" onmouseover="mover5()" id="sl5">
+                <img src="img/5.jpg">
+            </div>
         </div>
-    
-        <div class="mySlides fade">
-            <img src="img/fan.jpg">
-            <div class="text">Caption Three</div>
+
+        <!-- 파트너스 -->
+        <div class="partners">
+            <div class="partners_logo">
+                <a href="#"><img src="img/nike2.png"></a>
+                <a href="#"><img src="img/socios.png"></a>
+                <a href="#"><img src="img/pirelli.png"></a>
+                <a href="#"><img src="img/lenovo.png"></a>
+            </div>
         </div>
-    
-        <div class="mySlides fade">
-            <img src="img/fans.jpg">
-            <div class="text">Caption Three</div>
+
+        <!-- 로그인 창 -->
+        <div class="modal">
+            <div class="login-container">
+                <div class="login-logo"><img src="img/interlogo3.png"></div>
+                <div class="login-form">
+                    <input type="email" placeholder="EMAIL">
+                    <input type="password" placeholder="PASSWORD">
+                </div>
+                <div class="login-signup">
+                    <button class="loginbtn"><a href="#">LOGIN</a></button>
+                    <button><a href="#">SIGN UP</a></button>
+                </div>
+                <span><a href="#">FORGOT YOUR PASSWORD?</a></span>
+                <div class="later-close">
+                    <button onclick="document.querySelector('.modal').style.display='none'"><a
+                            href="#">LATER</a></button>
+                </div>
+            </div>
         </div>
-        
-        <div class="mySlides fade">
-            <img src="img/winner.jpg">
-            <div class="text">Caption Three</div>
-        </div>
-    </div>
 
 
 
 
-    <!-- 파트너스 -->
-    <div class="partners">        
-        <div class="partners_logo">
-            <a href="#"><img src="img/nike2.png"></a>
-            <a href="#"><img src="img/socios.png"></a>
-            <a href="#"><img src="img/pirelli.png"></a>
-            <a href="#"><img src="img/lenovo.png"></a>
-        </div>
-    </div>
-        
     </div>
 
     <!-- 자바스크립트 -->

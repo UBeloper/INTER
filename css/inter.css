@@ -19,159 +19,313 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+#gomain {
+    position:fixed;
+    z-index: 6;
+    width: 6rem;
+    top: 4rem;
+    left: 4rem;
     cursor: pointer;
+}
+
+#gomain:hover {
+    width : 8rem;
 }
 
 /* mainpage */
 
     /* 기본 설정 및 상단 네비*/
-body {
-    background-color: black;
-    z-index: 1;}
-
-.main {
-    height: 100vh;
-    background: black;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-i {
-    padding: 1.2rem;
-    margin-left: 0.2rem;
-    color: white;
-}
-
-i:hover {
-    background-color:#3f55b8;
-    border-radius: 10px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color:#001ea0;
-    border-bottom: 10px solid rgb(137, 149, 194);
-}
-
-.logos {
-    position: relative;
-    cursor: pointer;
-}
-
-.logo {
-    position: absolute;
-    width: 4rem;
-    top: 30px;
-    left: 30px;
-}
-
-.textlogo {
-    position :absolute;
-    width: 10rem;
-    top: 30px;
-    left: 110px;
-}
-
-.nav_right {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 2rem;
+    body {
+        background-color: black;
+        z-index: 1;
+    }
     
-}
-
-.nav_right a{
-    padding: 1rem;  
-}
-
-.nav_right a:hover{
-    background-color:#3f55b8;
-    border-radius: 10px;
-}
-
-/* 메뉴 드랍다운 */
-
-/* ABOUT*/
-.drop-content-about {
-    background: rgba(0, 0, 0, 0.3);
-    text-align: right;
-    padding-right: 14rem;
-    font-weight: bold;
-    display: none;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-
-.drop-content-about a{
-    display: inline-block;
-    padding: 1rem;
-}
-
-.drop-content-about a:hover {
-    background-color: #001ea0;
-}
-
-
-/* NEWS */
-
-.drop-content-news {
-    background-color: rgba(0, 0, 0, 0.3);
-    text-align: right;
-    padding-right: 6rem;
-    font-weight: bold;
-    display: none;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-
-.drop-content-news a{
-    display: inline-block;
-    padding: 1rem;
-}
-
-.drop-content-news a:hover {
-    background-color: #001ea0;
-}
-
-/* 사진 슬라이드 */
-.slideshow-container {
-    margin-top: 2rem;
-    position: relative;
-}
-.mySlides img {
-    height: 60vh;
-}
-
-
-/* 파트너스 */
-.partners {
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%);
-    border-top: 10px solid rgb(137, 149, 194);
-}
-
-.partners_logo {
-    margin : 20px;
-    height: 60px;
-}
-
-.partners_logo img {
-    position: relative;
-    margin: 0 30px;
-    width: 4rem;
-}
-
-.partners_logo img:hover {   
-    width: 4.2rem;
-}
+    .main {
+        height: 100vh;
+        background: black;
+    }
+    
+    a, span {
+        color: white;
+        text-decoration: none;
+    }
+    
+    i {
+        padding: 1.2rem;
+        margin-left: 0.2rem;
+        color: white;
+        cursor: pointer;
+    }
+    
+    i:hover {
+        background-color:#3f55b8;
+        border-radius: 10px;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color:#001ea0;
+        overflow: hidden;
+        /* border-bottom: 3px solid rgb(137, 149, 194); */
+    }
+    
+    .logos {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .logo {
+        position: absolute;
+        width: 4rem;
+        top: 30px;
+        left: 30px;
+    }
+    
+    .textlogo {
+        position :absolute;
+        width: 10rem;
+        top: 30px;
+        left: 110px;
+    }
+    
+    .nav_right {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 2rem;
+        
+    }
+    
+    .nav_right a{
+        padding: 1rem;  
+    }
+    
+    .nav_right a:hover{
+        background-color:#3f55b8;
+        border-radius: 10px;
+    }
+    
+    /* 메뉴 드랍다운 */
+    
+    /* ABOUT*/
+    .drop-content-about {
+        background: rgba(255, 255, 255, 0.1);
+        text-align: right;
+        padding-right: 8.2rem;
+        font-weight: bold;
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    .drop-content-about a, .drop-content-about span{
+        display: inline-block;
+        padding: 1.2rem;
+        cursor: pointer;
+    }
+    
+    .drop-content-about a:hover, .drop-content-about span:hover {
+        background-color: #001ea0;
+    }
+    
+    
+    /* NEWS */
+    
+    .drop-content-news {
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: right;
+        padding-right: 0;
+        font-weight: bold;
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    .drop-content-news a, .drop-content-news span{
+        display: inline-block;
+        padding: 1.2rem;
+        cursor: pointer;
+    }
+    
+    .drop-content-news a:hover, .drop-content-news span:hover {
+        background-color: #001ea0;
+    }
+    
+    /* 사진 슬라이드 */
+    
+    .dots {
+        width: 15%;
+        height: 4rem;
+        float: left; /*블럭영역때문에 띄우려고*/
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    
+    .dots .dot {
+        color: rgba(255, 255, 255, 0.753);
+        text-align: center;
+        flex: 20%;
+        margin: 0 1rem;
+        padding: 0 0.3rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    
+    .active {
+        background-color: #001ea0;
+    }
+    
+    
+    /* 사진영역*/
+    .slideshow-container {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .mySlides {
+        transition: all 1.5s;
+        padding: 0 0.3rem;
+    }
+    
+    .mySlides img {
+        height: 60vh;
+    }
+    
+    .mySlides img:hover {
+        cursor: pointer;
+    }
+    
+    /* 파트너스 */
+    .partners {
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        border-top: 2px solid rgb(137, 149, 194);
+    }
+    
+    .partners_logo {
+        margin : 20px;
+        height: 60px;
+    }
+    
+    .partners_logo img {
+        position: relative;
+        margin: 0 30px;
+        width: 4rem;
+    }
+    
+    .partners_logo img:hover {   
+        width: 4.2rem;
+    }
+    
+    
+    
+    /* 로그인 폼 + modal */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .login-container {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5rem;
+        width: 50%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .login-container div {
+        padding: 0.7rem;
+        
+    }
+    
+    .login-logo {
+        margin-bottom: 2rem;
+    }
+    
+    .login-form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .login-form input {
+        padding: 1rem;
+        border: none;
+        border-bottom: 0.1px white solid;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-form input:hover {
+        border: 1px solid white;
+    }
+    
+    .login-signup {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .loginbtn, .login-signup button {
+        color: white;
+        font-weight: bold;
+        padding: 0.7rem;
+        border: none;
+        background-color: var(--color-primary);
+    }
+    
+    .loginbtn:hover, .login-signup button:hover {
+        background-color: royalblue;
+    }
+    
+    .login-container span {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        
+    }
+    
+    .login-container span:hover {
+        text-decoration: underline;
+    }
+    
+    .later-close {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .later-close button {
+        color: white;
+        font-weight: bold;
+        padding: 0.7rem;
+        border: none;
+        background-color: red;
+    }
+    
+    .later-close button:hover {
+        background-color: rgb(230, 87, 87);
+    }
+    
