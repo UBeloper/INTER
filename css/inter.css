@@ -327,3 +327,12 @@
         background-color: rgb(230, 87, 87);
     }
     
+
+
+
+    /* 미디어쿼리 */
+    @media screen and (max-width: 750px) {
+        .videointro {
+            display: none;
+        }
+    }
