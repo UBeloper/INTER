@@ -184,7 +184,7 @@
     
     /* 사진영역*/
 .slideshow-container {
-    margin-top: 5rem;
+    margin-top: 7rem;
     display: flex;
     justify-content: space-around;
 }

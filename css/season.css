@@ -140,11 +140,13 @@ i:hover {
     color: white;
     padding: 1rem;
     margin-left : 1rem;
+    margin-top: 3rem;
 }
 
 .table-container {
     color: white;
     padding: 1rem 3rem;
+    margin-left: 3rem;
     float: left;
 } 
 
@@ -244,7 +246,7 @@ tr td:nth-child(8) {
 /* 영상 */
 .videobox {
     margin-top: 1rem;
-    margin-left: 9rem;
+    margin-left: 12rem;
     height: 30vh;
     width: 50vh;
     float: left;
