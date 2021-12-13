@@ -170,14 +170,36 @@ i:hover {
 
 .news-p a{
     text-decoration: underline;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 0.4rem;
+    /* display: inline-block; */
 }
+
+.news-p .newsread{
+}
+
 .newsimg-cont {
     cursor: pointer;
 }
 
 .newsimg-cont img:hover {
-    border: 0.2px white solid;
+    border: 0.2px rgb(17, 16, 16) solid;
 }
+
+/* 
+.p1, .p2, .p3, .p4, .p5, .p6 {
+} */
+
+.newspimg {
+    display: none;
+    margin-left : 5rem;
+}
+.newspimg img{
+    height: 11.5rem;
+    border-radius: 5rem;
+}
+
 
 
 /* 파트너스 */
